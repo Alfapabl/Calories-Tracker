@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+# Calorie Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern calorie tracker built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. This application empowers users to monitor their daily calorie intake and calories burned by adding two types of activities: food and exercise.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Calorie Tracker app lets users log two kinds of activities:
 
-## Expanding the ESLint configuration
+- **Food:** Record the name and calories of meals or snacks to track calories consumed.
+- **Exercise:** Log workouts or physical activities along with the calories burned.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Each activity is displayed on individual cards, making it easy to review your daily entries. A banner at the top shows a summary of your activities by displaying:
+- Total calories consumed (from food),
+- Total calories burned (from exercise), and
+- The net sum of both, giving you an at-a-glance view of your calorie balance.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+This project is an excellent example of how to build a dynamic and responsive web application using modern technologies and best practices.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Activity Logging:**  
+  Add activities by selecting the type (Food or Exercise), entering the name, and specifying the calorie value.
+- **Visual Display:**  
+  Each activity is presented on a card with clear, concise details.
+- **Calorie Summary Banner:**  
+  View the total calories consumed, burned, and the net result in one unified banner.
+- **Modern Tooling:**  
+  Built using React for a dynamic UI, TypeScript for robust code, Vite for rapid development, and Tailwind CSS for modern styling.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/calorie-tracker.git
+   cd calorie-tracker
+npm install
+npm run dev
